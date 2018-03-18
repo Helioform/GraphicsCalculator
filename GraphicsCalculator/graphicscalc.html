@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphics Calculator</title>
+    
+    <!-- Displays any 3d function.
+    
+    Examples: Math.cos(y)+Math.cos(x)
+              Math.sin(Math.sqrt(x*y))
+              Math.sin(x)*Math.cos(y)
+              Math.sin(Math.sqrt(x*x+y*y))
+              x
+              y
+              x*y
+              x*x+y*y
+              
+              -->
+
+<script src="graphicscalc.js"></script>
+
+</head>
+
+
+<body bgcolor="#282828">
+<div>
+<input type="text" id="fxy" oninput="updateGraph()">Input function</input>
+</div>
+<br />
+<br />
+<button class="button" onclick="rotateGraph()">Rotate graph</button>
+<button class"button" onclick="adjustView()">Adjust View</button>
+    <canvas></canvas>
+</body>
+</html>
